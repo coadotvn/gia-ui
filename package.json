@@ -1,0 +1,48 @@
+{
+  "name": "gia-ui",
+  "version": "0.0.3",
+  "description": "A Nuxt 3 Desktop UI Library",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "files": [
+    "dist"
+  ],
+  "author": "coadotvn",
+  "responsitory": {
+    "type": "git",
+    "url": "git+https://github.com/coadotvn/gia-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coadotvn/gia-ui/issues"
+  },
+  "homepage": "https://github.com/coadotvn/gia-ui#readme",
+  "license": "MIT",
+  "keywords": [
+    "Nuxt3",
+    "Desktop",
+    "UI"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+  },
+  "dependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
+    "@nuxt/module-builder": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "eslint": "latest",
+    "nuxt3": "latest",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.49.10",
+    "sass-loader": "^12.6.0"
+  }
+}

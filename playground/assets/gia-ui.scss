@@ -1,0 +1,21 @@
+@import './resets';
+
+:root {
+  --gia-base-font-family: sans-serif;
+  --gia-base-font-size: 16px;
+  --gia-base-border: 1px solid #363434;
+  --gia-base-radius: 4px;
+
+  --gia-page-background: #424040;
+
+  --gia-primary-rgb: 200, 97, 53;
+  --gia-primary-color: rgb(var(--gia-primary-rgb));
+  --gia-primary-border: 1px solid var(--gia-primary-color);
+
+  --gia-text-color: #e5e5e5;
+
+  --gia-dialog-face: #424040;
+
+  --gia-button-face: #595959;
+  --gia-button-border: var(--gia-base-border);
+}
